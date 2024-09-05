@@ -1,0 +1,14 @@
+{
+  "name": "interactive_portfolio_website:_figma_ui_design_tutorial_for_beginners_|_step-by-step_guide_(community)",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel ./*.html ",
+    "build": "parcel build ./*.html  --dist-dir ./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}

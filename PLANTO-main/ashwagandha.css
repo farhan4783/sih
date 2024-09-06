@@ -1,10 +1,3 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -68,73 +61,13 @@
     font-size: 20px;
     text-decoration: none;
   }
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-    color: #333;
-    line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling */
-}
-
-header {
-    background-color: #3c763d;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #4cae4c;
-    color: #fff;
-}
-
-main {
+  main {
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
-.plant-overview,
+  .plant-overview,
 .plant-info,
 .use-cases,
 .testimonials {
@@ -164,7 +97,7 @@ main {
 }
 
 .plant-overview p,
-.plant-info p,
+.plant-info p,ul,
 .use-cases p,
 .testimonials p {
     line-height: 1.8;
@@ -188,7 +121,7 @@ main {
 }
 
 .use-case {
-    background-color: #f3f4f6;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -217,48 +150,145 @@ main {
 .testimonial.active {
     display: block;
 }
-
-footer {
-    background-color: #3c763d;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1d2c22;
+  color: #fff;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9em;
+.footer {
+  background-color: #1d2b22;
+  padding: 40px 20px;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: underline;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-footer a:hover {
-    color: #d4e157;
+.footer-about,
+.footer-links,
+.footer-subscribe {
+  flex: 1;
+  margin-left: 40px;
 }
 
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
+.footer-about .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-    nav ul {
-        flex-direction: column;
-        margin-top: 15px;
-    }
+.footer-about .logo h1 {
+  margin: 0 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 
-    .plant-overview,
-    .plant-info,
-    .use-cases,
-    .testimonials {
-        margin-bottom: 20px;
-    }
+.social-links a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links h3,
+.footer-subscribe h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-subscribe form {
+  display: flex;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  background-color: #ccc
+}
+
+.footer-subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #1d2c22;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: #ddd;
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content h1 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.image-content {
+  flex: 2;
+}
+
+.image-content img {
+  max-width: 10%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ccc;
 }
